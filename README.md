@@ -1,2 +1,5 @@
 # snek
- snake using mvc
+
+snake using mvc
+
+## try it out here: https://magfje.github.io/snek
