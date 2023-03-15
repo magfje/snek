@@ -1,0 +1,73 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #440562;
+}
+
+#app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #89f90f;
+}
+
+.grid-container {
+  display: grid;
+  height: fit-content;
+  width: fit-content;
+  box-shadow: 0px 1px 2px 0px hsla(0, 0%, 0%, 0.035),
+    0px 2px 4px 0px hsla(0, 0%, 0%, 0.07), 0px 4px 8px 0px hsla(0, 0%, 0%, 0.07),
+    0px 8px 16px 0px hsla(0, 0%, 0%, 0.07),
+    0px 32px 64px 0px hsla(0, 0%, 0%, 0.07);
+}
+
+.grid-item {
+  width: 1.5vw;
+  height: 1.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.grid-isEdge {
+  background-color: #88f90f13;
+}
+
+.grid-isHead {
+  background-color: #89f90f;
+  filter: drop-shadow(0 0 0.75rem #89f90f);
+  border-radius: 25%;
+}
+
+.grid-isBody {
+  background-color: #89f90f;
+  filter: drop-shadow(0 0 0.75rem #89f90f);
+  border-radius: 25%;
+}
+
+.grid-isFood {
+  background-color: #f92a0f;
+
+  border-radius: 50%;
+  filter: drop-shadow(0 0 0.75rem #f92a0f);
+}
+.grid-isStartText {
+  background-color: #89f90f;
+  filter: drop-shadow(0 0 0.75rem #89f90f);
+  cursor: pointer;
+}
+.grid-isOverText {
+  background-color: #f92a0f;
+  filter: drop-shadow(0 0 0.75rem #f92a0f);
+  cursor: pointer;
+}
+
+#score-container {
+  margin: 1vh;
+  font-size: 3vh;
+}
